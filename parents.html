@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Growing Up Guide</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/parents.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="logo-container">
+    <a href="index.html">
+    <img src="imgs/logo.png" alt="Logo">
+    </a>
+  </div>
+
+<script src="js/script.js"></script>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="parents.html">For Parents</a>
+  <a href="puberty.html">Puberty</a>
+  <a href="hygiene.html">Personal Hygiene</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="container">
+    <div class="parent-heading">
+      <img src="imgs/parentsinfo.png" alt="Parents and kids">
+      <h2>Kia Ora Parents!</h2>
+    </div>
+  <div class="content">
+      <div class="message">
+        <p>Thank you for letting your child use the Growing Up Guide to help them navigate through these new stages in their lives.</p>
+        <p>Here at the Growing Up Guide, our ultimate goal is to help young tweens through the overwhelming times of puberty and personal hygiene. </p>
+        <p>We provide children with kid-friendly, easy-to-understand content regarding what puberty is, why it happens, and all the important personal hygiene steps. We ensure any scientific information provided is fact-checked and is from reliable resources. All the methods of maintaining good personal hygiene are gathered from these experts and are gained from other parents. </p>
+        <p>Many websites that are available on the internet are mainly targeted towards parenting, there has been nothing for kids to access independently here in New Zealand, so we went on a mission to do so.</p>
+        <p>Children at this stage in their lives may find it hard to talk to someone. They may have questions that may not have been answered, but our guide provides the answers to them.</p>
+        <p>As parents, we understand your role in their lives at this stage is crucial as you provide them with additional support. So we would love to hear your feedback and what we can improve or add on to our website</p>
+      </div>
+  </div>
+</div>
+
+  <h3>Feedback Form</h3>
+<div class="form-container">
+  <form name="feedback-form">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br><br>
+    <label>Email: </label><br>
+    <input type="email" name="email"><br><br>
+    <label>Gender:</label><br><br>
+    <input  type="radio" name="gender" value="Male"><label>Male</label>
+    <input  type="radio" name="gender" value="Female"><label>Female</label><br><br>
+    <label>Feedback:</label><br>
+    <textarea name="feedback" cols="20">
+    </textarea><br><br>
+    <input type="submit" name="submit">
+
+    <span id="success"></span>
+  </form>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbylq3gMk91im1VXl9YO96BAr6_nKrO4FwEXhqgf6HM8QtgmCpv3tw3vhRil-hxJ_xnb/exec'
+  const form = document.forms['feedback-form']
+  const success = document.getElementById ('success');
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        success.innerHTML="Thank you for your feedback!";
+
+        setTimeout(function()
+        {
+          success.innerHTML="";
+        },2000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</header>
+<footer>
+  <div class="footer-content">
+    <p>Copyright ©. All rights reserved to Veda Upadhyay.</p>
+  </div>
+</footer>
+
+</body>
+</html>
