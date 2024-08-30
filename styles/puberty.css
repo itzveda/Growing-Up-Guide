@@ -1,0 +1,333 @@
+body {
+  background-color: #D4E3BB;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #C0D59B;
+  text-align: center;
+  font-size: 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: Russo One;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.logo-container {
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.logo-container img {
+  width: 200px;
+  height: auto;
+}
+
+
+.intro-block{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.p-intro {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.p-intro h2 {
+  color: #333;
+  font-family: Russo One;
+  font-size: 50px;
+}
+
+.p-intro p{
+  color: black;
+  font-family: ABeeZee;
+  font-size: 30px;
+}
+
+.intro-block img{
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.puberty-info {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #D4E3BB;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-family: Russo One;
+}
+
+.puberty-info p{
+  text-align: left;
+  color: black;
+  font-family: ABeeZee;
+  font-size: 20px;
+}
+
+.boys{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #BCD4F1;
+}
+
+.boys-heading {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #BCD4F1;
+  padding: 20px;
+  font-size: 40px;
+  text-align: left;
+  font-family: Russo One;
+}
+
+.voice-card {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.info h5 {
+  margin: 0 0 10px;
+  font-size: 35px;
+  font-family: Russo One;
+}
+
+.info p{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: ABeeZee;
+}
+
+.voice-card .image img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .voice-card {
+    flex-direction: column;
+  }}
+
+
+.hair-card {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.hair-card .image img {
+    width: 300px;
+    height: 300px;
+  }
+
+@media screen and (max-width: 768px) {
+  .hair-card {
+    flex-direction: column;
+  }}
+
+.erection-card {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  align-items: center;
+  }
+
+.erection-card .image img {
+  width: 300px;
+  height: 300px;
+}
+
+  @media screen and (max-width: 768px) {
+    .erection-card {
+      flex-direction: column;
+    }}
+
+.girls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #F0CADD;
+}
+
+.girls-heading {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F0CADD;
+  padding: 20px;
+  font-size: 40px;
+  text-align: left;
+  font-family: Russo One;
+}
+
+.periods-card {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  align-items: center;
+  }
+
+.periods-card .image img {
+  width: 300px;
+  height: 300px;
+}
+
+  @media screen and (max-width: 768px) {
+    .periods-card {
+      flex-direction: column;
+    }}
+
+.breasts-card {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.breasts-card .image img {
+  width: 300px;
+  height: 300px;
+    }
+
+ @media screen and (max-width: 768px) {
+    .breasts-card {
+     flex-direction: column;
+    }}
+
+.ending-info {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #D4E3BB;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-family: Russo One;
+}
+
+.ending-info p{
+  text-align: left;
+  color: black;
+  font-family: ABeeZee;
+  font-size: 20px;
+}
+
+#quiz {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(198, 222,60, 0.2);
+  border: 1px solid black;
+}
+
+h6 {
+  text-align: center;
+  color: black;
+  font-family: Russo One;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-family: ABeeZee;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: ABeeZee;
+  font-size: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: ABeeZee;
+}
+
+button {
+  display: block;
+  padding:15px;
+  background-color: #C0D59B;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: ABeeZee;
+}
+
+button:hover {
+  background-color: #BCD4F1;
+}
+
+.footer {
+  background-color: #BB8027;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: ABeeZee;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
