@@ -1,8 +1,10 @@
+/*Overall full page styles*/
 body {
   background-color: #D4E3BB;
   margin: 0;
 }
 
+/*Navigation bar code*/
 .topnav {
   overflow: hidden;
   background-color: #C0D59B;
@@ -20,7 +22,7 @@ body {
   font-family: Russo One;
 }
 
-.topnav a:hover {
+.topnav a: hover {
   background-color: white;
   color: black;
 }
@@ -29,6 +31,7 @@ body {
   display: none;
 }
 
+/*Navigation bar adjusting according to screen size*/
 @media screen and (max-width: 900px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -50,7 +53,7 @@ body {
     text-align: left;
   }
 }
-
+/*Logo sizing adjustments*/
 .logo-container {
   margin-right: 20px;
   padding-left: 10px;
@@ -60,7 +63,7 @@ body {
   width: 200px;
   height: auto;
 }
-
+/*First half of page including image plus heading*/
 .white-block {
   box-sizing: border-box;
   width: 100%;
@@ -101,12 +104,14 @@ body {
   color: #333;
 }
 
+/*Divides pages distinctly*/
 .page-divider {
   height: 50px;
   margin: 10px 0;
   background-color: #C0D59B;
 }
 
+/*Styling each surfing/preview card*/
 .cards {
   background-color: #BCD4F1;
   display: flex;
@@ -176,6 +181,7 @@ body {
   color: #333;
 }
 
+/*Frequently asked questions section styles*/
 .faq-section {
   background-color: #F0CADD;
   padding:20px;
@@ -195,7 +201,6 @@ body {
   text-align: center;
   font-size: 25px;
   font-family: ABeeZee;
-  margin-top: 0;
 }
 
 .faq-box a {
@@ -205,6 +210,7 @@ body {
   color: #007BFF;
 }
 
+/*Footer*/
 .footer {
   background-color: #BB8027;
   color: black;
@@ -222,3 +228,4 @@ body {
 .footer-content p {
   margin: 5px 0;
 }
+
