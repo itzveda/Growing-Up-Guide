@@ -1,8 +1,10 @@
+/*Overall full page styles*/
 body {
   background-color: #D4E3BB;
   margin: 0;
 }
 
+/*Navigation bar code*/
 .topnav {
   overflow: hidden;
   background-color: #C0D59B;
@@ -20,7 +22,7 @@ body {
   font-family: Russo One;
 }
 
-.topnav a:hover {
+.topnav a: hover {
   background-color: white;
   color: black;
 }
@@ -29,6 +31,7 @@ body {
   display: none;
 }
 
+/*Navigation bar adjusting according to screen size*/
 @media screen and (max-width: 900px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -51,6 +54,7 @@ body {
   }
 }
 
+/*Logo sizing adjustments*/
 .logo-container {
   margin-right: 20px;
   padding-left: 10px;
@@ -61,7 +65,7 @@ body {
   height: auto;
 }
 
-
+/*First half of page including image plus heading*/
 .intro-block{
   box-sizing: border-box;
   width: 100%;
@@ -95,6 +99,7 @@ body {
   margin: 0 auto;
 }
 
+/*First section styling the puberty introduction*/
 .puberty-info {
   box-sizing: border-box;
   width: 100%;
@@ -112,6 +117,7 @@ body {
   font-size: 20px;
 }
 
+/*Second section styling the boys information*/
 .boys{
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +135,7 @@ body {
   font-family: Russo One;
 }
 
+/*Styling each indiviudal card within section: Deep Voice card*/
 .voice-card {
   display: flex;
   padding: 25px;
@@ -159,7 +166,7 @@ body {
     flex-direction: column;
   }}
 
-
+/*Styling each indiviudal card within section: Hair growth card*/
 .hair-card {
   display: flex;
   padding: 25px;
@@ -177,6 +184,7 @@ body {
     flex-direction: column;
   }}
 
+/*Styling each indiviudal card within section: Erection card*/
 .erection-card {
   display: flex;
   padding: 25px;
@@ -194,6 +202,7 @@ body {
       flex-direction: column;
     }}
 
+/*Third section styling the girls information*/
 .girls{
   display: flex;
   flex-wrap: wrap;
@@ -211,6 +220,7 @@ body {
   font-family: Russo One;
 }
 
+/*Styling each indiviudal card within section: Period card*/
 .periods-card {
   display: flex;
   padding: 25px;
@@ -228,6 +238,7 @@ body {
       flex-direction: column;
     }}
 
+/*Styling each indiviudal card within section: Breasts card*/
 .breasts-card {
   display: flex;
   padding: 25px;
@@ -245,6 +256,7 @@ body {
      flex-direction: column;
     }}
 
+/*Styling the final informationd*/
 .ending-info {
   box-sizing: border-box;
   width: 100%;
@@ -262,6 +274,7 @@ body {
   font-size: 20px;
 }
 
+/*Quiz styles*/
 #quiz {
   max-width: 600px;
   margin: 20px auto;
@@ -310,10 +323,11 @@ button {
   font-family: ABeeZee;
 }
 
-button:hover {
+button: hover {
   background-color: #BCD4F1;
 }
 
+/*Footer*/
 .footer {
   background-color: #BB8027;
   color: black;
