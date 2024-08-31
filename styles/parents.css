@@ -1,8 +1,10 @@
+/*Overall full page styles*/
 body {
   background-color: #D4E3BB;
   margin: 0;
 }
 
+/*Navigation bar code*/
 .topnav {
   overflow: hidden;
   background-color: #C0D59B;
@@ -29,6 +31,7 @@ body {
   display: none;
 }
 
+/*Navigation bar adjusting according to screen size*/
 @media screen and (max-width: 900px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -51,6 +54,7 @@ body {
   }
 }
 
+/*Logo sizing adjustments*/
 .logo-container {
   margin-right: 20px;
   padding-left: 10px;
@@ -61,6 +65,7 @@ body {
   height: auto;
 }
 
+/*All the content resides in this one big section*/
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -124,6 +129,7 @@ h3 {
   text-align: center;
 }
 
+/*Feedback form styles*/
 form {
   width: 600px;
   height: auto;
@@ -158,6 +164,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+/*Footer*/
 .footer {
   background-color: #BB8027;
   color: black;
